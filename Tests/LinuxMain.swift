@@ -5,6 +5,7 @@ import XCTest
 @testable import MailModelsTests
 @testable import ConsoleMailClientTests
 @testable import InMemoryMailClientTests
+@testable import SMTPTests
 
 XCTMain([
     // Mail Models Tests
@@ -17,6 +18,15 @@ XCTMain([
 
     // InMemoryMailClientTests
     testCase(InMemoryMailClientTests.allTests),
+
+    // SMTPTestSuite
+    testCase(SMTPClientConvenienceTests.allTests),
+    testCase(SMTPClientErrorTests.allTests),
+    testCase(SMTPClientTests.allTests),
+    testCase(SMTPCredentialsTests.allTests),
+    testCase(SMTPExtensionsTests.allTests),
+    testCase(SMTPGreetingTests.allTests),
+    testCase(SMTPUUIDTests.allTests),
 ])
 
 #endif

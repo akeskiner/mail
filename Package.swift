@@ -22,12 +22,12 @@ let package = Package(
                 "Mail"
             ]
         ),
-        // Target(
-        //     name: "SMTP",
-        //     dependencies: [
-        //         "Mail"
-        //     ]
-        // ),
+        Target(
+            name: "SMTP",
+            dependencies: [
+                "Mail"
+            ]
+        ),
         // Target(
         //     name: "SMTPExample",
         //     dependencies: [
@@ -38,6 +38,6 @@ let package = Package(
     dependencies: dependencies,
     exclude: [
         // "Resources",
-        // "Sources/SMTPClientExample",
+        "Sources/SMTPClientExample",
     ]
 )
